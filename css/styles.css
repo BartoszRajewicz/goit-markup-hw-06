@@ -662,6 +662,13 @@ ul {
   margin-bottom: 12px;
 }
 
+.modal-form-label{
+  font-size: 12px;
+  line-height: 0.85;
+  text-align: left;
+  color: var(--paragraph-color);
+}
+
 /* NEWSLETTER SECTION */
 
 .newsletter-signup {
