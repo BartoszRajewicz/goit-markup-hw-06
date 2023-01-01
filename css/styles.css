@@ -682,12 +682,21 @@ ul {
   outline: none;
   color: var(--border-modal-grey);
   border-radius: 4px;
-  transition: var(--transition-effect);
+  transition: border var(--transition-effect);
 }
 
 .modal-form-field {
-  padding-left: 40px;
   height: 100%;
+}
+
+.modal-form-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 12px;
+  fill: var(--logo-color);
+  transform: translateY(-50%);
+  transition: border var(--transition-effect);
 }
 
 /* NEWSLETTER SECTION */
