@@ -27,6 +27,7 @@ body {
   --overlay-background: #2196f3e5;
   --transition-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --border-dark: #ffffff4d;
+  --border-modal-grey:#21212133;
 }
 
 h1,
@@ -668,6 +669,22 @@ ul {
   text-align: left;
   color: var(--paragraph-color);
 }
+
+
+.modal-form-input{
+  height: 40px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-item{
+width: 100%;
+border: 1px solid; color: var(--border-modal-grey);
+border-radius: 4px;
+transition: var(--transition-effect);
+}
+
+
 
 /* NEWSLETTER SECTION */
 
