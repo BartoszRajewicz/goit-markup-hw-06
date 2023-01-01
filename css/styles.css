@@ -628,6 +628,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   opacity: 1;
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close-button {
@@ -651,6 +652,14 @@ ul {
   pointer-events: none;
   transform: scale(0.5 0);
   transition-duration: 0.7s;
+}
+
+.form-tittle {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.17;
+  margin-bottom: 12px;
 }
 
 /* NEWSLETTER SECTION */
