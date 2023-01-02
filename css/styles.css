@@ -655,7 +655,12 @@ ul {
   transition-duration: 0.7s;
 }
 
+.modal-form{
+  max-width: 448px;
+}
+
 .form-tittle {
+  max-width: 448px;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -676,6 +681,7 @@ ul {
   margin-bottom: 10px;
 }
 
+
 .modal-form-item {
   width: 100%;
   border: 1px solid;
@@ -687,7 +693,9 @@ ul {
 
 .modal-form-field {
   height: 100%;
+  padding-left: 40px;
 }
+
 
 .modal-form-icon {
   position: absolute;
@@ -697,6 +705,18 @@ ul {
   fill: var(--logo-color);
   transform: translateY(-50%);
   transition: border var(--transition-effect);
+}
+
+.modal-form-comment {
+  height: 120px;
+  margin-bottom: 20px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.modal-form-comment::placeholder{
+
+  
 }
 
 /* NEWSLETTER SECTION */
