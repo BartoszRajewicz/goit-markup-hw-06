@@ -655,7 +655,7 @@ ul {
   transition-duration: 0.7s;
 }
 
-.modal-form{
+.modal-form {
   max-width: 448px;
 }
 
@@ -672,21 +672,22 @@ ul {
   font-size: 12px;
   line-height: 0.85;
   text-align: left;
-  color: var(--paragraph-color);
+  color: var(--contact-color);
 }
 
 .modal-form-input {
   height: 40px;
   position: relative;
   margin-bottom: 10px;
+  color: var(--logo-color);
 }
-
 
 .modal-form-item {
   width: 100%;
   border: 1px solid;
   outline: none;
-  color: var(--border-modal-grey);
+  color: var(--logo-color);
+  border: 1px solid var(--border-modal-grey);
   border-radius: 4px;
   transition: border var(--transition-effect);
 }
@@ -695,7 +696,6 @@ ul {
   height: 100%;
   padding-left: 40px;
 }
-
 
 .modal-form-icon {
   position: absolute;
@@ -714,9 +714,75 @@ ul {
   padding: 12px 16px;
 }
 
-.modal-form-comment::placeholder{
+.modal-form-comment::placeholder {
+  font-size: 12px;
+  color: #75757580;
+}
 
-  
+.modal-form-checkbox-item {
+  position: absolute;
+  height: 15px;
+  width: 16px;
+  opacity: 0;
+}
+
+.modal-form-checkbox-blank,
+.modal-form-checkbox-checked {
+  vertical-align: text-top;
+  margin-right: 8px;
+}
+
+.modal-form-checkbox-checked {
+  display: none;
+}
+
+.modal-form-checkbox-blank {
+  fill: var(--headers-color);
+}
+
+.modal-form-checkbox-item:checked ~ .modal-form-checkbox-checked {
+  display: inline-block;
+}
+
+.modal-form-checkbox-item:checked ~ .modal-form-checkbox-blank {
+  display: none;
+}
+
+.modal-form-checkbox-label {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--paragraph-color);
+}
+
+.modal-form-hyperlink {
+  color: var(--logo-sec-color);
+}
+
+.modal-form-item:focus {
+  border: 1px solid var(--logo-sec-color);
+}
+
+.modal-form-input:focus-within .modal-form-icon {
+  fill: var(--logo-sec-color);
+}
+
+.modal-form-button {
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 164px;
+  margin-right: 164px;
+  padding: 10px 76px;
+  background-color: var(--logo-sec-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px #00000026;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
 }
 
 /* NEWSLETTER SECTION */
@@ -750,6 +816,12 @@ ul {
   background-color: var(--background-color-dark);
   padding-left: 15px;
   outline: none;
+}
+
+.newsletter-item::placeholder {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .newsletter-button {
