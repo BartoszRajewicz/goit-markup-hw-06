@@ -695,6 +695,7 @@ ul {
 }
 
 .modal-form-item {
+  padding-left: 40px;
   width: 100%;
   border: 1px solid #21212133;
   border-radius: 4px;
